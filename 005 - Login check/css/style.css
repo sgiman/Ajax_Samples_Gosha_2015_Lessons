@@ -1,0 +1,366 @@
+/**************************************
+ * style.css
+ *
+ * LESSONS for CSS3
+ * from GOSHA DUDAR (2015)
+ * ------------------------------------
+ * Writing by sgiman @ 2022-2023
+ **************************************/
+
+* { /* применяется абсалютно ко всему документу */
+    /* font-size: 20px; */
+}
+
+html  {
+    background-color: #fbf5eb;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* body {background-color: #fbf5eb;} */
+body {
+    /* text-align: center; */
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+}
+
+/* for tag h1,h2,h3 */
+h1 {color: red;}
+h2 {color: blue;}
+h3 {color: darkgreen; }
+
+#header_1 {color: brown;}                                   /* for id1 */
+#header_2 {color: green;}                                   /* for id2 */
+
+h3.style {color: chocolate;}                                /* class - only for h3 */
+
+p.style {background-color: darkred; color: #fbf5eb}         /* class - only for p */
+
+p i {
+    color: blueviolet;
+    size: 24px;
+    font-family: Impact, sans-serif;
+}
+
+p.example,b {
+    font-size: 30px;
+    font-weight: normal
+}
+
+p.simple-text {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+}
+
+div.dform {
+    padding: 20px;
+    margin: 10px;
+    /* left: 45%; */
+    /* position: absolute; */
+}
+
+div.center {
+    text-align: center;
+}
+
+/************************************************************************************
+  BUTTON
+  https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/
+************************************************************************************/
+.button {
+    /*position: absolute;
+    top:50%;*/
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    min-height:30px;
+    min-width: 120px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #ffbf00;
+}
+
+/****** IMAGE ******/
+img {
+    cursor: pointer;
+}
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+img:hover {
+    outline: none;
+}
+img:focus {
+    outline: none;
+}
+
+/****** COLOR ******/
+.t_red {
+	color: red;
+	font-weight: 500;
+    font-size: 24px;
+}
+.t_green {
+	color: green;
+	font-weight: 500;
+    font-size: 24px;
+}
+.t_blue {
+	color: blue;
+	font-weight: 500;
+    font-size: 24px;
+}
+
+/***********************************************************
+                        INPUT STYLES
+ https://freefrontend.com/css-input-text/#google_vignette
+ ***********************************************************/
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.2em solid #E91E63;
+    background: rgba(229, 196, 207, 0.5);
+    border-radius: 0.2em 0.2em 0 0;
+    padding: 0.4em;
+    color: #3f2929;
+    font-size: 18px;
+}
+
+input[type=password] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.2em solid #E91E63;
+    background: rgba(229, 196, 207, 0.5);
+    border-radius: 0.2em 0.2em 0 0;
+    padding: 0.4em;
+    color: #3f2929;
+    font-size: 18px;
+}
+
+/**********************************************************/
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #E91E63;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+input[type=checkbox]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #E91E63;
+    background-color: CanvasText;
+    -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform-origin: left top;
+}
+input[type=checkbox]:checked::before {
+    transform: scale(1);
+}
+
+div.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.2em;
+    margin-left: -2em;
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #E91E63;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+input[type=radio]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #E91E63;
+    background-color: CanvasText;
+    transform-origin: top bottom;
+}
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
+
+input[type=color] {
+    padding: 0;
+    border: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    width: 8em;
+}
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -8px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.2em solid #E91E63;
+}
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.2em solid #E91E63;
+}
+input[type=range]::-ms-thumb {
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.2em solid #E91E63;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background: #E91E63;
+    width: 100%;
+    border-radius: 1vmin;
+    height: 0.5em;
+}
+input[type=range]::-moz-range-track {
+    background: #E91E63;
+    width: 100%;
+    border-radius: 1vmin;
+    height: 0.5em;
+}
+input[type=range]::-ms-track {
+    background: #E91E63;
+    width: 100%;
+    border-radius: 1vmin;
+    height: 0.5em;
+}
+
+input[type=button] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0.2em solid #E91E63;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.85em 1.5em;
+    color: #E91E63;
+    border-radius: 2em;
+    transition: 1s;
+}
+input[type=button]:hover, input[type=button]:focus, input[type=button]:active {
+    background: #E91E63;
+    color: #fff;
+}
+
+input[type=file] {
+    display: none;
+}
+
+label[for=file] {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+    justify-items: center;
+    align-content: center;
+    color: #E91E63;
+    border: 0.2em solid #E91E63;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.85em 1.5em;
+    color: #E91E63;
+    border-radius: 2em;
+    transition: 1s;
+}
+label[for=file]:hover, label[for=file]:focus, label[for=file]:active {
+    background: #E91E63;
+    color: #fff;
+}
+
+input[type=date] {
+    border: 0.2em solid #E91E63;
+    padding: 0.8em 0.9em;
+    border-radius: 2em;
+    color: #E91E63;
+}
+input[type=date]::-webkit-datetime-edit-text {
+    color: red;
+    padding: 0 0.3em;
+}
+input[type=date]::-webkit-inner-spin-button {
+    display: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23E91E63' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E");
+}
+
+input[type=number] {
+    width: 3em;
+    padding: 0.5em;
+    border: 0.2em solid #E91E63;
+    border-radius: 1em;
+    text-align: center;
+    color: #E91E63;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+    background: red;
+}
+/***************************** END INPUT STYLES *****************************/

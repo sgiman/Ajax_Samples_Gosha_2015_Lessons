@@ -1,0 +1,127 @@
+/**************************************
+ * style.css
+ *
+ * LESSONS for CSS3
+ * from GOSHA DUDAR (2015)
+ * ------------------------------------
+ * Writing by sgiman @ 2022-2023
+ **************************************/
+
+* { /* применяется абсалютно ко всему документу */
+    /* font-size: 20px; */
+}
+
+html  {
+    background-color: #fbf5eb;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* body {background-color: #fbf5eb;} */
+body {
+    /* text-align: center; */
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+/* for tag h1,h2,h3 */
+h1 {color: red;}
+h2 {color: blue;}
+h3 {color: darkgreen; }
+
+#header_1 {color: brown;}                                   /* for id1 */
+#header_2 {color: green;}                                   /* for id2 */
+
+h3.style {color: chocolate;}                                /* class - only for h3 */
+
+p.style {background-color: darkred; color: #fbf5eb}         /* class - only for p */
+
+p i {
+    color: blueviolet;
+    size: 24px;
+    font-family: Impact, sans-serif;
+}
+
+p.example,b {
+    font-size: 30px;
+    font-weight: normal
+}
+
+p.simple-text {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+}
+
+div.dform {
+    padding: 20px;
+    margin: 10px;
+    /* left: 45%; */
+    /* position: absolute; */
+}
+
+div.center {
+    text-align: center;
+}
+
+/************************************************************************************
+  BUTTON
+  https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/
+************************************************************************************/
+.button {
+    /*position: absolute;
+    top:50%;*/
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    min-height:30px;
+    min-width: 120px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline;
+}
+
+.button:active {
+    background-color: #ffbf00;
+}
+
+/****** IMAGE ******/
+img {
+    cursor: pointer;
+}
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+img:hover {
+    outline: none;
+}
+img:focus {
+    outline: none;
+}
+
+/****** COLOR ******/
+.t_red {
+	color: red;
+	font-weight: 500;
+    font-size: 24px;
+}
+.t_green {
+	color: green;
+	font-weight: 500;
+    font-size: 24px;
+}
+.t_blue {
+	color: blue;
+	font-weight: 500;
+    font-size: 24px;
+}
+
+#information {
+    color: green;
+    margin: 40px 0 0 0;
+}
