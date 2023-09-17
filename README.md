@@ -8,7 +8,8 @@ but also makes your website much more functional.
 
 https://www.youtube.com/playlist?list=PL0lO_mIqDDFUgBqIpiaES9vhZLJbucdUa
 
-![hqdefault](https://github.com/sgiman/Ajax_Samples_2015/assets/7030369/3400cf54-2e20-469c-bd51-05fcedcbe152)
+
+![ajax](https://github.com/sgiman/Ajax_Samples_2015/assets/7030369/cc094152-132d-4413-87a0-04d270bf5f5e)
 
 
 **Sgiman @ 2023**
