@@ -48,7 +48,7 @@ $(document).ready(function () {
                     console.log("id = " + id)
                     $("select[name='city']").append("<option value='" + id + "'>" + data[id])
                     //$("select[name='city']").append("<option value='" + id + "'>" + data[id] + "<\option>")
-                    //$("#city").append("<option value='" + id + "'>" + data[id] + "<\option>")
+                    //$("#city").append("<option value='" + id + "'>" + data[id])
                     console.log("<option value='" + id + "'>" + data[id] + "<\option>")
                 }
             });
